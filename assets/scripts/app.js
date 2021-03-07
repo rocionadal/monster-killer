@@ -147,14 +147,17 @@ function printLogHandler() {
     // for (let i = 0; i < 3; i++) {
     //     console.log('--------------');
     // }
-    let j = 0;
-    while (j < 3) {
-        console.log('--------------');
-        j++;
-    }
-    // for (let i = 0; i < battleLog.length; i++) {
-    //     console.log(battleLog[i]);
-    // } // you get access to the index because i is the index
+    // let j = 0;
+    // while (j < 3) {
+    //     console.log('--------------');
+    //     j++;
+    // }
+    console.log('First loop');
+    for (let i = 0; i < battleLog.length; i++) {
+        console.log(battleLog[i]);
+    } // you get access to the index because i is the index
+    console.log('-------------------');
+    console.log('Second loop');
     let i = 0;
     for (const logEntry of battleLog) { // you dont have access to the index, only the element, we manually did this by creating line before
         if (!lastLoggedEntry && lastLoggedEntry !== 0 || lastLoggedEntry === i) {
@@ -162,10 +165,9 @@ function printLogHandler() {
             for (const key in logEntry) {
                 console.log(`#${key} => ${logEntry[key]}`);
             }
-            lastLoggedEntry = i;
-            break;
         }
         i++;
+        lastLoggedEntry = i;
     } 
 }
 
