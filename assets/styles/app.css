@@ -17,8 +17,8 @@ progress {
   appearance: none;
   width: 80%;
   height: 2rem;
-  color: #ff0062;
-  border: 1px solid #a927f5;
+  color: #18697A;
+  border: 1px solid #eb5e0b;
 }
 
 progress[value]::-webkit-progress-bar,
@@ -28,19 +28,19 @@ progress[value] {
 }
 
 progress[value]::-webkit-progress-value {
-  background-color: #a927f5;
+  background-color: #eb5e0b;
   transition: all 0.2s ease-out;
 }
 
 progress[value]::-moz-progress-bar {
-  background-color: #a927f5;
+  background-color: #eb5e0b;
   transition: all 0.2s ease-out;
 }
 
 button {
   font: inherit;
-  background: #ff0062;
-  border: 1px solid #ff0062;
+  background: #18697A;
+  border: 1px solid #18697A;
   color: white;
   padding: 1rem 2rem;
   border-radius: 6px;
@@ -54,8 +54,8 @@ button:focus {
 
 button:hover,
 button:active {
-  background: #a927f5;
-  border-color: #a927f5;
+  background: #eb5e0b;
+  border-color: #eb5e0b;
 }
 
 #health-levels,
@@ -77,8 +77,8 @@ button:active {
 #bonus-life {
   font-weight: bold;
   color: white;
-  background: #ff0062;
-  border: 1px solid #ff0062;
+  background: #18697A;
+  border: 1px solid #18697A;
   padding: 0.15rem 0.5rem;
   border-radius: 10px;
   text-align: center;
