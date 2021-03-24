@@ -69,6 +69,14 @@ button:active {
   background: white;
 }
 
+@media (max-width: 400px) {
+  #health-levels {
+    width: 20rem;
+  } #controls {
+    width: 20rem;
+  }
+}
+
 #controls {
   display: flex;
   flex-direction: column;
